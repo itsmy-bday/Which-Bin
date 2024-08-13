@@ -24,8 +24,117 @@ h1 {
 h2 {
   margin-top: 30px;
   color: #333;
-<<<<<<< HEAD
 }
-=======
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
->>>>>>> b7fadc3eacb63a580060d5f59e102d877bd1398f
+
+.search-container input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}
+
+.add-item-container,
+.delete-item-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-item-container input[type="text"],
+.delete-item-container input[type="text"] {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-item-container button,
+.delete-item-container button {
+  padding: 10px 20px;
+  background-color: #f0932b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.add-item-container button:hover,
+.delete-item-container button:hover {
+  background-color: #e86c10;
+}
+
+.delete-item-container {
+  justify-content: flex-end;
+}
+
+#dictionary {
+  margin-top: 20px;
+}
+
+#dictionary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#dictionary li {
+  margin-bottom: 5px;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.new-item-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.new-item-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.new-item-form button {
+  padding: 10px 20px;
+  background-color: #f0932b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.new-item-form button:hover {
+  background-color: #e86c10;
+}
