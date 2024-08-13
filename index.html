@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  Hello world
+  <title>Bin Finder</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
-</body>
+</head>
+<body>
+  <div class="container">
+    <h1>Bin Finder</h1>
 
+    <div class="search-container">
+      <input type="text" id="searchBox" list="itemList" placeholder="Search for an item...">
+      <datalist id="itemList"></datalist>
+      <button onclick="searchBin()">Search</button>
+    </div>
+
+    <p id="result"></p>
+
+    <h2>Add New Item</h2>
+    <div class="add-item-container">
+      <input type="text" id="addItemBox" placeholder="Enter a new item" maxlength="20">
+      <button onclick="addItem()">Add</button>
+    </div>
+
+    <h2>Delete Item</h2>
+    <div class="delete-item-container">
+      <input type="text" id="deleteItemBox" placeholder="Enter an item to delete">
+      <button onclick="deleteItem()">Delete</button>
+    </div>
+
+    <h2>Dictionary</h2>
+    <div id="dictionary"></div>
+  </div>
+
+</body>
 </html>
