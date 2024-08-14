@@ -1,0 +1,44 @@
+Apple
+Banana
+Orange
+Strawberry
+Blueberry
+Raspberry
+Pineapple
+Mango
+Watermelon
+Grapes
+Lemon
+Lime
+Peach
+Pear
+Plum
+Cherry
+Kiwi
+Coconut
+Avocado
+Papaya
+Fig
+Guava
+Cranberry
+Blackberry
+Pomegranate
+Apricot
+Grapefruit
+Passion fruit
+Lychee
+Cantaloupe
+Honeydew melon
+Nectarine
+Tangerine
+Clementine
+Persimmon
+Dragonfruit
+Jackfruit
+Kiwifruit
+Olive
+Date
+grass clippings
+grass
+leaves
+branches
