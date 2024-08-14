@@ -80,4 +80,58 @@ function bulkAddItemsFromArray(itemArray, bin) {
     for (var i = 0; i < itemArray.length; i++) {
       var item = itemArray[i].toLowerCase();
       if (item.trim() !== "") {
+        bins[item] = bin;
+      }
+    }
+    saveToLocalStorage();
+    displayDictionary();
+  }
+}
+
+function bulkAddItemsFromArray(itemArray, bin) {
+  if (Array.isArray(itemArray)) {
+    for (var i = 0; i < itemArray.length; i++) {
+      var item = itemArray[i].toLowerCase();
+      if (item.trim() !== "") {
+        bins[item] = bin;
+      }
+    }
+    saveToLocalStorage();
+    displayDictionary();
+  }
+}
+
+function deleteItem() {
+  var deleteItemBox = document.getElementById("deleteItemBox");
+  var itemToDelete = deleteItemBox.value.toLowerCase();
+
+  if (itemToDelete in bins) {
+    delete bins[itemToDelete];
+    deleteItemBox.value = "";
+    saveToLocalStorage();
+    alert("Item deleted successfully!");
+    displayDictionary();
+  } else {
+    alert("Item not found.");
+  }
+}
+
+function saveToLocalStorage() {
+  localStorage.setItem("bins", JSON.stringify(bins));
+}
+
+function displayDictionary() {
+  var dictionaryContainer = document.getElementById("dictionary");
+  dictionaryContainer.innerHTML = "";
+
+  var dictionaryHTML = "<ul>";
+  for (var item in bins) {
+    dictionaryHTML += "<li>" + item + " - " + bins[item] + "</li>";
+  }
+  dictionaryHTML += "</ul>";
+
+  dictionaryContainer.innerHTML = dictionaryHTML;
+}
+
+window.addEventListener("load", displayDictionary);
 
